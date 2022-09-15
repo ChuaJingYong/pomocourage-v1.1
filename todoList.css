@@ -1,0 +1,23 @@
+/* Completed Todo */
+[done]{
+    text-decoration: line-through;
+    color: rgb(10, 211, 10);
+}
+
+/* Deleted Todo */
+.deleted__todo{
+    display: none;
+}
+
+.not-done{
+    width: 25px;
+    cursor: pointer;
+}
+
+/* #todoList {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    width: 300px;
+} */
+

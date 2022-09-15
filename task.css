@@ -1,0 +1,85 @@
+.verticalLine{
+    border-left: 2px solid white;
+    height: 800px;
+}
+
+.tasks-container{
+    background-color: rgb(244, 170, 165, 25%);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.draggable{
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    cursor: move;
+    width: 200px;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--tertiary-color);
+}
+
+.dragging{
+    background-color: grey;
+}
+
+/* .draggable{
+    display: flex;
+    padding: 5px;
+    height: auto;
+    width: 250px;
+   column-gap: 20px;
+    /* flex-wrap:wrap; */
+ } */
+ 
+ .draggable span{
+     display: flex;
+     max-width: 200px;
+     border: solid orange;
+     color: black;
+     /* flex: 1;
+     flex: 6 1 auto; */
+     /* flex-shrink: 1; */
+ }
+ 
+ .draggable button{
+     width: 70px;
+ }
+
+.task-header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+.task-setting{
+    background-color: var(--secondary-color); 
+    margin:0 0 5px 0;
+    padding: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 40px;
+}
+
+#add-task{
+    display: flex;
+    border: 2px solid rgb(144, 139, 139);
+    border-style: dotted;
+    padding: 7px;
+    background-color: var(--secondary-color);
+    border-radius: 7px;
+    margin-bottom: 5px;
+    color: rgb(222, 226, 229);
+    cursor: pointer;
+    font-weight: 600;
+    align-items: center;
+    column-gap: 5px;
+}
+
+#add-task svg{
+    width: 25px;
+}

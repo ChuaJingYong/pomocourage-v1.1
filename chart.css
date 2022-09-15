@@ -1,0 +1,8 @@
+.chartContainer{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 60%;
+    height: 45%;
+    background-color: white;
+}

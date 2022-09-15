@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="titleDetails">25:00 - Time to Focus!</title>
+  <!-- <script type="module" src="./firebase.js" defer></script>
+  <script type="module" src="./sandbox.js" defer></script> -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./chart.css">
+  <link rel="stylesheet" href="./task.css">
+  <link rel="stylesheet" href="./quotes.css">
+  <link rel="stylesheet" href="./todoList.css">
+  <link rel="icon" id="titleIcon" href="https://cdn-icons-png.flaticon.com/512/877/877712.png" type="image/png">
+</head>
+<body>
+  <!-- <div class="chartContainer"> -->
+
+  <!-- </div> -->
+  <nav>
+    <a href="#"><img src="https://pomofocus.io/icons/icon-white.png" class="icon">Pomodoro</a>
+    <div class="nav-items">
+      <li>
+        <ul><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm2 10a1 1 0 10-2 0v3a1 1 0 102 0v-3zm2-3a1 1 0 011 1v5a1 1 0 11-2 0v-5a1 1 0 011-1zm4-1a1 1 0 10-2 0v7a1 1 0 102 0V8z" clip-rule="evenodd" />
+        </svg>Report</a></ul>
+        <ul><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+        </svg>Setting</a></ul>
+        <ul><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z" clip-rule="evenodd" />
+        </svg>Login</a></ul>
+      </li>
+    </div>
+  </nav>
+  <main>
+
+    <div class="left-section">
+
+      <section class="timer">
+        <div class="pomo-choice">
+          <li>
+            <ul><a href="#" id="switchDefault">Pomodoro</a></ul>
+            <ul><a href="#" id="switchShort">Short Break</a></ul>
+            <ul><a href="#" id="switchLong">Long Break</a></ul>
+          </li>
+        </div>
+        <p id="timestring">0:15</p>
+        <button class="start-btn" id="start-btn">START</button>
+      </section>
+  
+      <hr>
+  
+      <section class="quotes-card">
+        
+        <div class="top-section">
+          <div class="quote-container">
+              <p class="quote-content">
+                  <!-- This is a random quote generator -->
+              </p>
+              <p class="quote-author">
+                  <!-- ~Jing Yong, yours truly ;) -->
+              </p>
+          </div>
+      </div>
+  
+      <div class="bottom-section">
+          <button class="new-quote-button">
+              New Quote
+          </button>
+      </div>
+  
+      </section>
+
+    </div>
+
+    <div class="verticalLine"></div>
+
+    <div class="right-section">
+      
+    <section class="tasks-section">
+      <div class="task-header">
+        <h4>Tasks | </h4>
+
+        <div id="add-task"> 
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>          
+          <span>Add Task</span>  
+        </div>
+        
+
+          <svg class="task-setting" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>                   
+        
+      </div>
+
+      <hr>
+      
+
+      <!-- Todo Form -->
+      <br>
+      <form>
+          <label for="todoInput">Enter your todo: </label>
+          <input type="text" name="todoInput" id="todoInput" placeholder="Enter here...">
+
+          <button id="todoButton" type="button">Add</button>
+      </form>
+
+      <!-- Todo List -->
+      <ul id="todoList" class="tasks-container">
+      </ul>
+
+    </section>
+    </div>
+
+    <section class="popup-setting-container">
+
+      <div class="setting-header">
+        <h5>TIMER SETTING</h5>
+        <div class="close-setting-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+
+        </div>
+
+      </div>
+
+      <hr class="solid">
+
+      <div class="time-setting-container">
+        <h5>Time (Minutes)</h5>
+        <div class="time-input-container">
+          <div class="time-input">
+            <label for="pomodoro-input">Pomodoro</label>
+            <input type="number" name="pomodoro-input" id="pomodoro-input">
+          </div>
+
+          <div class="time-input">
+            <label for="short-break-input">Short Break</label>
+            <input type="number" name="short-break-input" id="short-break-input">
+          </div>
+            
+          <div class="time-input">
+            <label for="long-break-input">Long Break</label>
+            <input type="number" name="long-break-input" id="long-break-input">
+          </div>
+
+        </div>
+      </div>
+
+      <hr class="solid">
+
+      <div class="mini-section">
+        <h5>Auto start Breaks?</h5>
+
+        <!-- Rounded switch -->
+        <label class="toggle-switch">
+          <input type="checkbox" id="autostart-break-button">
+          <span class="slider round"></span>
+        </label>
+
+      </div>
+
+      <hr class="solid">
+
+        <div class="mini-section">
+          <h5>Auto start Pomodoros?</h5>
+
+          <!-- Rounded switch -->
+          <label class="toggle-switch">
+            <input type="checkbox" id="autostart-pomodoro-button">
+            <span class="slider round"></span>
+          </label>
+
+        </div>
+
+      <hr class="solid">
+      
+      <div class="mini-section">
+        <h5>Long Break Interval</h5>
+        <input type="number" id="long-break-interval-input">
+      </div>
+
+    </section>
+    
+    <template id="template1">
+
+      <label for="textInput">Text Input</label>
+      <input type="text" name="textInput">
+      <p class="blue">This is a template</p>
+    </template>
+
+  </main>
+  <script type="module" src="./task.js"></script>
+  <script type="module" src="./firebase.js"></script>
+  <script type="module" src="./sandbox.js"></script>
+  <script type="module" src="./quotes.js"></script>
+  <!-- <script type="module" src="./todoList.js"></script> -->
+  <script>
+        // Select DOM Elements
+    const todoInput = document.querySelector("#todoInput")
+    const todoList = document.querySelector("#todoList")
+    const allItmes = document.querySelectorAll("#todoList li")
+    const todoButton = document.querySelector("#todoButton")
+
+    // Event Listener: Add Todo Button
+    console.log(todoInput,todoList,todoButton)
+    // Feature: Add Todo
+
+    todoInput.addEventListener("keypress",e=>{
+        if(e.key ==="Enter"){
+            e.preventDefault()
+            addTodo()
+        }
+    })
+
+    todoButton.addEventListener("click", e=>{
+        e.preventDefault
+        addTodo()
+    })
+
+    function addTodo(){
+        const todoInput = document.querySelector("#todoInput")
+        console.log("todo list values => ",todoList)
+        // id
+        const id = todoList.children.length + 1
+
+        // value
+        const item = todoInput.value
+        if (!item) return
+
+        console.log(todoInput.value)
+
+        const newTodo = `
+            <li id = ${id} class="draggable" draggable="true">
+                <button onclick = completeTodo(${id})>Complete</button>
+                <span>${item}</span>
+                <button onclick = deleteTodo(${id})>Delete</button>
+            </li>
+            `
+            // <p class="draggable" draggable="true">Get Pizza</p>
+            // <img onclick = completeTodo(${id}) class="not-done" src="https://cdn-icons-png.flaticon.com/512/5290/5290594.png" alt="Not Done Icon">
+        todoList.innerHTML += newTodo
+
+        // Remove prev input
+        document.querySelector("#todoInput").value = ""
+    }
+
+    function findTodo(id){
+        return todoList.children[id-1]
+    }
+
+    function completeTodo(id){
+        const todoItem = findTodo(id)
+        console.log(todoItem)
+
+        const itemSpan = todoItem.firstElementChild
+        itemSpan.toggleAttribute("done")
+
+        const completeStatus = itemSpan.getAttribute("done") === null? false:true //syntax is checking if condition is matched or not, either option A or B will be the returned value
+        // Official syntax ==> condition ? exprIfTrue : exprIfFalse
+        console.log(completeStatus)
+        const completeButton = todoItem.children[0]
+        completeButton.innerHTML = completeStatus? "Undo":"Completed"
+    }
+
+    // Feature: Delete Todo
+    function deleteTodo(id){
+        const todoItem = findTodo(id)
+        
+        console.log(todoItem)
+    }
+
+    // Using the ?? as Nullish Coalescing to handle for and return default values if null or error encountered
+    // The idea is if the result is null or undefined on the left side, use the default value on the right side
+    const value1 = '' ?? 'default string';
+    console.log(value1);
+
+
+    const value2 = null?? 1000;
+    console.log(value2);
+
+    // if the result is either a 0 or '' empty string, then it'll still display 0 or empty string. 
+    // ?? operand makes sure to cover only for null and undefined cases
+
+    // Make a pop up and enter div to allow user to add new tasks
+    // Add draggable class to the new todos
+    // Check the toggle function of the todos
+    // Modify the check mark to toggle
+    // Add a dustbin and remove task. Add a double check option
+  </script>
+</body>
+</html>

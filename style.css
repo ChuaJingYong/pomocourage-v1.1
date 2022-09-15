@@ -1,0 +1,266 @@
+:root{
+  --primary-color: #e6575b;
+  --secondary-color: rgb(244, 170, 165, 25%);
+  --tertiary-color: #14213d;
+  --secondary-gray: #edede9;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: var(--primary-color);
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+p{
+  color: white;
+}
+
+nav{
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > a{
+  display: flex;
+  align-items: center;
+  font-size: large;
+}
+
+.icon{
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+.nav-items > li{
+  display: flex;
+}
+
+.nav-items > li > ul > a{
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+}
+
+main{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 50px;
+}
+
+.timer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-color);
+  width: 500px;
+  height: 300px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.pomo-choice > li{
+  display: flex;
+  justify-content: center;
+}
+
+.pomo-choice > li > ul{
+  display: flex;
+}
+
+.pomo-choice > li > ul > a{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.pomo-choice > li > ul > a:hover{
+  background-color: var(--primary-color);
+}
+
+.timer > p{
+  font-size: 100px;
+  margin: 2rem 0;
+}
+
+.start-btn{
+  padding: 0.5rem 2rem;
+  font-size: large;
+  border-radius: 0.5rem;
+  border-color: transparent;
+  color: var(--primary-color);
+}
+
+.start-btn:hover{
+  background-color: var(--primary-color);
+  color: white;
+}
+/* ------Timer Settings--------- */
+.popup-setting-container{
+  display: none;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  height: 120vh;
+  padding: 10px;
+}
+
+.setting-header{
+  width: 300px;
+  display: flex;
+}
+
+.setting-header >h5{
+  width: 300px;
+  display: flex;
+  color: rgb(158, 153, 153);
+}
+
+hr.solid {
+  margin: 10px 0;
+   border-top: 3px solid #bbb;
+}
+
+.time-setting-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.time-setting-container>h5{
+  margin: 10px 0;
+}
+
+.time-input-container{
+  display: flex;
+  flex-direction: row;
+}
+
+/* .time-input-container> * + * {
+  margin: 10px 0;
+} */
+.time-input{
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  /* padding: 5px; */
+  margin: 5px 25px 5px 0;
+}
+
+.time-input>label{
+  font-size: smaller;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.time-input>input{
+  background-color: #edede9;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+}
+
+/* -----Toggle section styling------ */
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* The switch - the box around the slider */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--primary-color);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--primary-color);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.mini-section{
+  display: flex;
+  padding: 5px;
+}
+
+.mini-section>h5{
+  display: flex;
+  flex-grow: 1;
+  align-self: center;
+  color: var(--tertiary-color);
+}
+
+.mini-section>input{
+  width: 50px;
+  height: 30px;
+  background-color: var(--secondary-gray);
+  border-radius: 5px;
+  border: none;
+}
+/* .tasks{
+  background-color: green;
+} */

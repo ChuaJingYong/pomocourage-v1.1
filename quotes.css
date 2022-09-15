@@ -1,0 +1,43 @@
+.quotes-card{
+    margin-top: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section{
+    padding: 10px;
+    /* border: 1px solid grey; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: var(--secondary-color);
+}
+
+
+
+.quote-content{
+    display: flex;
+    padding-bottom: 10px;
+}
+.quote-author{
+    color: var(--secondary-gray);
+}
+
+.bottom-section{
+    /* border: 1px solid grey; */
+    padding: 10px 20px;
+    border-top: none;
+    background-color: #e5e5e5;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.new-quote-button{
+    background-color: rgb(255, 117, 143);
+    padding: 5px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(255, 117, 143,0.6);
+}
